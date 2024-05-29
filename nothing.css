@@ -100,11 +100,13 @@
         } 
 
     /*Sidebar: Direct Messages*/
-        #app-mount .channel__0aef5,
-        #app-mount .sidebar_e031be .categoryItem__0608f { 
-            margin-bottom: 2px; 
-            transition: background-color 0.2s; 
-            transition-timing-function: ease-in-out
+#app-mount .channel__0aef5,
+#app-mount .sidebar_e031be .categoryItem__0608f { 
+    margin-bottom: 2px; 
+    transition: background-color 0.5s; /* Zwiększono czas przejścia na 0.5 sekundy */
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Użycie bardziej płynnej funkcji czasowej */
+}
+
         }
         #app-mount .channel__0aef5:hover, 
         #app-mount .interactive-1vLZ_I.interactiveSelected__689f0,
