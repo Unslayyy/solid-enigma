@@ -102,8 +102,8 @@
     /*Sidebar: Direct Messages*/
 #app-mount .channel__0aef5,
 #app-mount .sidebar_e031be .categoryItem__0608f { 
-    margin-bottom: 2px; 
-    transition: background-color 0.5s; /* Zwiększono czas przejścia na 0.5 sekundy */
+    margin-bottom: 5px; 
+    transition: background-color 1s; /* Zwiększono czas przejścia na 0.5 sekundy */
     transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1); /* Użycie bardziej płynnej funkcji czasowej */
 }
 
@@ -117,27 +117,44 @@
 
         #app-mount .privateChannelsHeaderContainer_b22dc9 {
             background-color: var(--primary3-colour);
-            padding: 12px;
-            border-radius: 11px;
+            padding: 15px;
+            border-radius: 12px;
         }
 
     /*Discover Servers*/
-        #app-mount .sidebar_e031be div[dir="ltr"] {background-image: var(--transparency-2);}
-        #app-mount .sidebar_e031be .itemInner_eedb2b {margin: 0!important;}
+#app-mount .sidebar_e031be div[dir="ltr"] {
+    background-image: var(--transparency-2);
+    transition: background-image 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
-        #app-mount .pageWrapper_c182d3,
-        #app-mount .content__76dcf .scroller__32e73 {
-            background-color: transparent; 
-            background-image: var(--transparency-1);
-        }
+#app-mount .sidebar_e031be .itemInner_eedb2b {
+    margin: 0!important;
+    transition: margin 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
-        #app-mount .pageWrapper_c182d3 .card__86773,
-        #app-mount .content__76dcf .container_c83a4f {
-            background-color: var(--secondary3-colour);
-        }
-        #app-mount .pageWrapper_c182d3 .card__86773:hover {background-color: var(--secondary2-colour);}
+#app-mount .pageWrapper_c182d3,
+#app-mount .content__76dcf .scroller__32e73 {
+    background-color: transparent;
+    background-image: var(--transparency-1);
+    transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1), 
+                background-image 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
-        #app-mount .pageWrapper_c182d3 .searchBoxInput-3h4etz {background-color: transparent;}
+#app-mount .pageWrapper_c182d3 .card__86773,
+#app-mount .content__76dcf .container_c83a4f {
+    background-color: var(--secondary3-colour);
+    transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#app-mount .pageWrapper_c182d3 .card__86773:hover {
+    background-color: var(--secondary2-colour);
+    transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+#app-mount .pageWrapper_c182d3 .searchBoxInput-3h4etz {
+    background-color: transparent;
+    transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
 
     /*Now Active*/
         #app-mount .nowPlayingColumn_b025fe .itemCard_b64118 {background-color: var(--secondary3-colour);}
